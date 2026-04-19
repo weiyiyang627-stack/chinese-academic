@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中文科研操作系统</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <div class="brand-mark">研</div>
+          <div>
+            <p class="eyebrow">Chinese-native Academic OS</p>
+            <h1>中文科研操作系统</h1>
+          </div>
+        </div>
+
+        <nav class="nav-list" id="nav-list"></nav>
+
+        <section class="sidebar-card">
+          <p class="section-label">术语偏好</p>
+          <div id="preference-summary"></div>
+        </section>
+
+        <section class="sidebar-card">
+          <p class="section-label">研究焦点</p>
+          <ul class="topic-list" id="topic-list"></ul>
+        </section>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">管理学者的中文原生研究助手</p>
+            <h2 id="topbar-title">今天值得读的论文</h2>
+          </div>
+          <div class="topbar-actions">
+            <button class="ghost-btn" id="locale-toggle">中文 / English</button>
+            <button class="primary-btn" id="quick-translate">一键翻译全文</button>
+          </div>
+        </header>
+
+        <section class="hero-panel">
+          <div class="hero-copy">
+            <p class="section-label">今日智能摘要</p>
+            <h3>先用中文看懂，再进入英文发表。</h3>
+            <p>
+              这个原型把论文阅读、学术翻译、术语一致性和科研工作流放到同一工作台里，让中文思考真正成为默认起点。
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn" data-route="home">查看今日论文</button>
+              <button class="ghost-btn" data-route="workflow">进入科研工作流</button>
+            </div>
+          </div>
+          <div class="hero-stats" id="hero-stats"></div>
+        </section>
+
+        <section id="content-root" class="content-root"></section>
+      </main>
+    </div>
+
+    <div id="tooltip" class="tooltip hidden"></div>
+
+    <div id="modal-backdrop" class="modal-backdrop hidden">
+      <div class="modal-card">
+        <button class="modal-close" id="modal-close" aria-label="关闭">×</button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+  </html>

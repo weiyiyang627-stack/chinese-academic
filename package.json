@@ -1,0 +1,9 @@
+{
+  "name": "chinese-academic-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chinese-first AI research assistant prototype for management scholars",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
