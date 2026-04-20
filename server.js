@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { URL } = require("url");
 
-const ROOT = path.join(__dirname, "web");
+const ROOT = __dirname;
 const PORT = process.env.PORT || 3000;
 const LANGBLY_API_URL = "https://api.langbly.com/language/translate/v2";
 const LANGBLY_API_KEY = process.env.LANGBLY_API_KEY || process.env.TRANSLATE_API_KEY || "";
